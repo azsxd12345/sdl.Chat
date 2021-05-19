@@ -47,17 +47,31 @@
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/main_button"
+        app:layout_constraintEnd_toStartOf="@id/main_button2"
         app:layout_constraintTop_toBottomOf="@id/main_logview" />
 
     <Button
         android:id="@+id/main_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
         android:layout_margin="@dimen/margin"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="16dp"
         android:onClick="onClickSendButton"
         android:text="@string/main_button_label"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/main_button2"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/margin"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="onClickSendButton2"
+        android:text="@string/main_button_label2"
+        app:layout_constraintEnd_toStartOf="@id/main_button"
+        app:layout_constraintTop_toBottomOf="@id/main_logview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
